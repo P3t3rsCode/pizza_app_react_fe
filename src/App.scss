@@ -1,0 +1,31 @@
+.page-enter {
+  animation: bounce-in 0.8s;
+}
+.page-enter-active {
+  animation: bounce-in 0.8s;
+}
+.page-exit {
+  animation: bounce-out 0.5s;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+}
